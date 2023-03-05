@@ -6,10 +6,10 @@ from datetime import datetime
 def CreateUsers():
     print('##### Create users, passwords, and roles #####')
     ########## Open the file user.txt in append mode and assign to UserFile
-     
+    file = open("UserFile.txt","a") as UserFile 
     while True:
         ########## Write the line of code that will call function GetUserName and assign the return value to username
-        
+        GetUserName = 
         if (username.upper() == "END"):
             break
         ########## Write the line of code that will call function GetUserPassword and assign the return value to userpwd
@@ -25,17 +25,19 @@ def CreateUsers():
 
 def GetUserName():
     ##### write the code to enter the username or End and return username 
-   
+    GetUserName = input("Enter employee name or end to stop: ")
+    return GetUserName
 
 def GetUserPassword():
     ##### write the code to enter the pwd and return pwd
-
+    GetUserPassword = input("Enter employee password: ")
+    return GetUserPassword
 
 def GetUserRole():
      userrole = input("Enter role (Admin or User): ")
      while True:
          ####### write the if statement that validates that Admin or User has been entered. If true, return userrole.  If false, re-input userrole
-
+         GetUserRole = input("Enter admin or user")
 
 def printuserinfo():
     UserFile = open("Users.txt","r")
